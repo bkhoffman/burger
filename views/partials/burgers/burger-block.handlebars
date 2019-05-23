@@ -1,9 +1,7 @@
-<li>
-	{{name}}
+<div class="mt-4">
+	<h4>{{burger_name}}</h4>
 
-	<button class="change-devour" data-id="{{id}}" data-newDevour="{{devoured}}">
-		{{!-- {{#if devoured}}Yummy!{{else}}Not Devoured!{{/if}} --}}
+	<!--Devour me button-->
+	<button class="change-devour btn btn-primary" data-id="{{id}}" data-newdevour="{{devour}}"> Eat me
 	</button>
-
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
-</li>
+</div>

@@ -53,7 +53,7 @@
       <div class="card-body">
         {{#each burgers}}
             {{#if devoured}}
-              {{> burgers/burger-block devour=true}}
+              {{> burgers/burger-devoured devour=true}}
             {{/if}}
         {{/each}}
       </div>
@@ -61,5 +61,3 @@
   </div>
 </div>
 
-
-{{!-- <button type="submit">Add Burger</button> --}}

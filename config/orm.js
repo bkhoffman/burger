@@ -7,6 +7,7 @@ let orm = {
     connection.query(queryString, function(err, result){
       if (err) throw err;
       console.log("ORM: select all: " + result);
+      cb(result);
     })
   },
   create: function(){
@@ -14,6 +15,7 @@ let orm = {
     connection.query(queryString, function(err, results){
       if (err) throw err;
       console.log(results);
+      cb(result);
   })
   },
   update: function(){
@@ -21,7 +23,15 @@ let orm = {
     connection.query(queryString, function(err, results){
       if (err) throw err;
       console.log(results);
+      cb(result);
   })
+  },
+  delete: function(){
+    let queryString = "DELETE FROM burgers WHERE " + condition;
+    connection.query(queryString, function(err, results){
+      if (err) throw err;
+      cb(result);
+    })
   }
 }
 

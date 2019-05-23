@@ -1,20 +1,20 @@
-
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+body {
+  background-image: url("../img/burger.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 
+#devoured-card-header  {
+  background-color: #ca341f;
 }
 
-.label {
-  font-weight: bold;
+.devoured-burger-name {
+  color: #ca341f;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
 
-.form-group {
-  margin-bottom: 5px;
-}
+
+.devoured-card, .footer {  
+  border-style: solid;
+  border-color: #ca341f;
+} */

@@ -1,17 +1,20 @@
+
 body {
-  background-image: url("../img/burger.jpeg");
-  background-repeat: no-repeat;
+  background: url(../img/burger.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
-#devoured-card-header  {
-  background-color: #ca341f;
+.container {
+  margin-bottom: 2em;
 }
 
-.devoured-burger-name {
-  color: #ca341f;
+.jumbotron {
+  font-family: 'Fascinate', cursive;
+}
+.display-4 {
+  font-size: 4em;
 }
 
-.devoured-card {  
-  border-style: solid;
-}

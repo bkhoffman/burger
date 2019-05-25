@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* 
+
 #devoured-card-header  {
   background-color: #ca341f;
 }
@@ -12,7 +12,6 @@ body {
   color: #ca341f;
 }
 
-.devoured-card, .footer {  
+.devoured-card {  
   border-style: solid;
-  border-color: #ca341f;
-} */
+}

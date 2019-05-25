@@ -9,7 +9,7 @@
     <div class="col-md-12">
       <div class="card border border-primary">
         <div class="card-header bg-primary text-white">
-         Can I take your order?
+          Can I take your order?
         </div>
         <!--Create/add burger form-->
         <div class="card-body">
@@ -25,39 +25,37 @@
     </div>
   </div>
 
-
   <div class="row mt-4">
     <div class="col-md-6 mt-4">
       <div class="card border border-primary">
         <div class="card-header bg-primary text-white">
-         Burgers
+          Burgers
         </div>
         <!--Div to hold burgers that have not been devoured yet-->
         <div class="card-body">
-              {{#each burgers}}
-                {{#unless devoured}}
-                  {{> burgers/burger-block devour=false}}
-                {{/unless}}
-              {{/each}}
+          {{#each burgers}}
+            {{#unless devoured}}
+              {{> burgers/burger-block devour=false}}
+            {{/unless}}
+          {{/each}}
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="col-md-6 mt-4">
-    <div class="card devoured-card">
-      <div class="card-header bg-primary text-white" id="devoured-card-header">
-        Devoured burgers
-      </div>
-      <!--When a burger has been devoured, put burger here-->
-      <div class="card-body">
-        {{#each burgers}}
+    <div class="col-md-6 mt-4">
+      <div class="card devoured-card">
+        <div class="card-header bg-emergency text-white" id="devoured-card-header">
+          Devoured burgers
+        </div>
+        <!--When a burger has been devoured, put burger here-->
+        <div class="card-body">
+          {{#each burgers}}
             {{#if devoured}}
               {{> burgers/burger-devoured devour=true}}
             {{/if}}
-        {{/each}}
+          {{/each}}
+        </div>
       </div>
     </div>
   </div>
 </div>
-
